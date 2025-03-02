@@ -1,5 +1,6 @@
 const time = new Date()
 const time1 = time.toLocaleTimeString();
+document.getElementById("blank-div").style.display = "none";
 
 
 completeButtons = document.querySelectorAll('.completed-button')
@@ -22,13 +23,15 @@ button.addEventListener("click",
             document.getElementById("number").innerText = nextNumber;
             
             const section = document.getElementById("blank-div");
+            document.getElementById("blank-div").style.display = "block";
+   
             const div = document.createElement("div");
             const p = document.createElement("p");
             p.innerText = `You have Complete The Task  at ${time1}
             `
             div.appendChild(p);
             section.appendChild(div);
-            
+
             button.setAttribute("disabled",true);
             completeButtons[i].setAttribute("disabled",true);
             
@@ -60,10 +63,11 @@ const specificDate =date.toDateString("en-GB")
 
 
  document.getElementById("btn-theme").addEventListener("click",function(){
-    const colors = ["bg-orange-400","bg-blue-300", "bg-pink-200" ,"bg-gray-300"];
-    const btnTheme = document.getElementById("btn-theme");
-    for( const color of colors){
-      btnTheme.classList.add(color);
+    const colors =['slateblue', 'Violet' ,'LightGray','mediumSeaGreen']
+   
+    for( let i = 0 ; i < colors.length ; i++){
+      const color = colors [i];
+    document.body.style.backgroundColor = color;
     
     }
  
