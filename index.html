@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body id="body" class=" bg-blue-200">
+<section class="w-11/12 bg-white rounded-xl mx-auto">
+   <nav class="flex justify-between ml-4 pt-4 pb-4">
+    <div class="flex gap-3 ">
+    <img src="./assets/logo.png" alt="">
+    <h1 class="text-3xl">Dev<span class="font-black">Board</h1> 
+    </div>
+   <div class="flex gap-3">
+    <div class="flex">
+        <button class="btn">
+            <span>
+                <img src="./assets/checkbox.png" alt="">
+            </span>
+          <span>
+            <p class="text-xl font-bold" id="task-number">23</p>
+          </span>
+            
+        </button>
+        </div> 
+        <button id="btn-theme" class="btn">
+            <img src="./assets/theme-btn.png" alt="">
+      </button>
+            
+
+
+   </div>
+    
+
+   </nav>
+
+
+</section>
+
+<div class="flex gap-6 ">
+ <div class="w-[1146px] bg-white container ml-16 rounded-lg mb-10 pb-9 mt-8">
+    <div class=" ml-6 mr-4  mb-12 pt-8 flex gap-4">
+        <div class="flex justify-center items-center gap-4 border bg-blue-200 w-3/12 p-4 rounded-lg">
+            <div>
+                <img class="w-3/4" src="./assets/checkbox.png" alt="">
+            </div>
+            
+           <div>
+                <h2  class="text-[#00303C]">Task Assigned</h2> 
+                <p id="number" class="font-bold text-lg">05</p>
+            </div>
+        </div>
+       
+            <div id="discover-box" class="flex border gap-3 rounded-lg p-6 bg-gradient-to-r from-cyan-500 to-blue-500">
+                <img src="./assets/board.png" alt="">
+                <h2>Discover Something New Today!</h2>
+            
+            </div>
+            <div class="border bg-cyan-100 w-3/12 ">
+                    <img src="./assets/calender.png" alt="">
+                    <p >
+                       
+                        <span id="date">
+
+                        </span>
+                    </p>
+            </div>
+       
+    </div>
+
+    <div class="grid grid-cols-3 gap-5 ml-6 mr-6">
+        <div class=" border-x-2 border-y-2 p-4 rounded-lg bg-blue-200 space-y-2 ">
+           <div class=" p-1 bg-white w-3/12 rounded-lg">
+            <p>ShopEase</p>
+           </div>
+            <h1 class="font-medium text-lg">Fix Mobile Button Issue </h1>
+            <input class="p-5 rounded-lg" type="text" placeholder="Debug using Chrome
+             DevTools, check for overlapping elements, 
+             and ensure onClick works properly
+            and ensure onClick works properly">
+            <div class="flex gap-4 pt-4">
+                <div>
+                    <p>Deadline</p>
+                    <p>date</p>
+                </div>
+                <button class="btn bg-blue-500 completed-button">
+                    completed
+                </button>
+            </div>
+        </div>
+        <div class=" border-x-2 border-y-2 p-4 rounded-lg bg-blue-200 ">
+           <div class=" p-1 bg-white w-3/12 rounded-lg">
+            <p>ShopEase</p>
+           </div>
+            <h1 class="font-medium text-lg">Fix Mobile Button Issue </h1>
+            <input class="p-7" type="text" placeholder="lorem20">
+            <div class="flex gap-4 pt-4">
+                <div>
+                    <p>Deadline</p>
+                    <p>date</p>
+                </div>
+                <button id="completed-button" class="btn bg-blue-500 completed-button">
+                    completed
+                </button>
+            </div>
+        </div>
+        <div class=" border-x-2 border-y-2 p-4 rounded-lg bg-blue-200 ">
+           <div class=" p-1 bg-white w-3/12 rounded-lg">
+            <p>ShopEase</p>
+           </div>
+            <h1 id="title" class="font-medium text-lg">Fix Mobile Button Issue </h1>
+            <input class="p-7" type="text" placeholder="lorem20">
+            <div class="flex gap-4 pt-4">
+                <div>
+                    <p>Deadline</p>
+                    <p>date</p>
+                </div>
+                <button id="completed-button" class="btn bg-blue-500 completed-button">
+                    completed
+                </button>
+            </div>
+        </div>
+        <div class=" border-x-2 border-y-2 p-4 rounded-lg bg-blue-200 ">
+           <div class=" p-1 bg-white w-3/12 rounded-lg">
+            <p>ShopEase</p>
+           </div>
+            <h1 class="font-medium text-lg">Fix Mobile Button Issue </h1>
+            <input class="p-7" type="text" placeholder="lorem20">
+            <div class="flex gap-4 pt-4">
+                <div>
+                    <p>Deadline</p>
+                    <p>date</p>
+                </div>
+                <button id="completed-button" class="btn bg-blue-500">
+                    completed
+                </button>
+            </div>
+        </div>
+        <div class=" border-x-2 border-y-2 p-4 rounded-lg bg-blue-200 ">
+           <div class=" p-1 bg-white w-3/12 rounded-lg">
+            <p>ShopEase</p>
+           </div>
+            <h1 class="font-medium text-lg">Fix Mobile Button Issue </h1>
+            <input class="p-7" type="text" placeholder="lorem20">
+            <div class="flex gap-4 pt-4">
+                <div>
+                    <p>Deadline</p>
+                    <p>date</p>
+                </div>
+                <button id="completed-button" class="btn bg-blue-500">
+                    completed
+                </button>
+            </div>
+        </div>
+        <div class=" border-x-2 border-y-2 p-4 rounded-lg bg-blue-200 ">
+           <div class=" p-1 bg-white w-3/12 rounded-lg">
+            <p>ShopEase</p>
+           </div>
+            <h1 class="font-medium text-lg">Fix Mobile Button Issue </h1>
+            <input class="p-7" type="text" placeholder="lorem20">
+            <div class="flex gap-4 pt-4">
+                <div>
+                    <p>Deadline</p>
+                    <p>date</p>
+                </div>
+                <button id="completed-button" class="btn bg-blue-500">
+                    completed
+                </button>
+            </div>
+        </div>
+        
+
+ </div>
+ </div>
+ <div class=" w-2/6 mr-16 rounded-lg mt-8 mb-7 grid-cols-2">
+    <section id="blank-section rounded-lg"  >
+        <div class="border bg-slate-50 w-3/4 p-4 text-center rounded-lg">
+            <div class="flex justify-center items-center gap-3 pb-4 mt-4">
+                <img src="./assets/activity.png" alt="">
+                <h2>Activity Log</h2>
+            </div>
+            
+            <button id="btn" class="btn bg-blue-400 text-center">Clear History</button>
+         
+          </div>
+    </section>
+
+   <section class="w-3/4  h-4/5 rounded-lg bg-white row-span-4">
+    <!-- <div id="" class=" bg-gray-300 mt-4 w-3/5 border p-2" >
+
+    </div> -->
+   </section>
+    
+    
+        <!-- <div id="blank-div" class="border bg-slate-50 w-3/4 p-4 row-span-3">
+    
+        </div> -->
+ 
+
+     
+     
+    </section>
+ </div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- <div class="grid grid-cols-2">
+<div class="col-span-3">
+    <div>
+        <section class=" mt-5 bg-white">
+
+            <section class="flex gap-6">
+                <div class="flex gap-4 border bg-purple-300 ">
+                    <p>icon</p>
+                    <div >
+                        <h2>Task Assigned</h2> 
+                        <p id="number">05</p>
+                    </div>
+                    </div>
+                    <div id="discover-box" class="flex border">
+                    <img src="./assets/board.png" alt="">
+                    <h2>Discover Something New Today!</h2>
+                
+                    </div>
+                    <div class="border bg- ">
+                        <img src="./assets/calender.png" alt="">
+                        <p>Wed ,Jul 28 2025 
+                        </p>
+                
+                    </div>
+            </section>
+            <section class="grid grid-cols-3">
+                <div class=" border-x-2 border-y-2">
+                    <button></button>
+                    <h1>Fix Mobile Button Issue </h1>
+                    <input type="text" placeholder="lorem20">
+                    <div>
+                        <div>
+                            <p>Deadline</p>
+                            <p>date</p>
+                        </div>
+                        <button id="completed-button" class="btn">
+                            completed
+                        </button>
+                    </div>
+                </div>
+                <div class=" border-x-2 border-y-2">
+                    <button></button>
+                    <h1>Fix Mobile Button Issue </h1>
+                    <input type="text" placeholder="lorem20">
+                    <div>
+                        <div>
+                            <p>Deadline</p>
+                            <p>date</p>
+                        </div>
+                        <button id="completed-button" class="btn">
+                            completed
+                        </button>
+                    </div>
+                </div>
+                <div class=" border-x-2 border-y-2">
+                    <button></button>
+                    <h1>Fix Mobile Button Issue </h1>
+                    <input type="text" placeholder="lorem20">
+                    <div>
+                        <div>
+                            <p>Deadline</p>
+                            <p>date</p>
+                        </div>
+                        <button id="completed-button" class="btn">
+                            completed
+                        </button>
+                    </div>
+                </div>
+                <div class=" border-x-2 border-y-2">
+                    <button></button>
+                    <h1>Fix Mobile Button Issue </h1>
+                    <input type="text" placeholder="lorem20">
+                    <div>
+                        <div>
+                            <p>Deadline</p>
+                            <p>date</p>
+                        </div>
+                        <button id="completed-button" class="btn">
+                            completed
+                        </button>
+                    </div>
+                </div>
+                <div class=" border-x-2 border-y-2">
+                    <button></button>
+                    <h1>Fix Mobile Button Issue </h1>
+                    <input type="text" placeholder="lorem20">
+                    <div>
+                        <div>
+                            <p>Deadline</p>
+                            <p>date</p>
+                        </div>
+                        <button id="completed-button" class="btn">
+                            completed
+                        </button>
+                    </div>
+                </div>
+                <div class=" border-x-2 border-y-2">
+                    <button></button>
+                    <h1>Fix Mobile Button Issue </h1>
+                    <input type="text" placeholder="lorem20">
+                    <div>
+                        <div>
+                            <p>Deadline</p>
+                            <p>date</p>
+                        </div>
+                        <button id="completed-button" class="btn">
+                            completed
+                        </button>
+                    </div>
+                </div>
+            </section>
+        
+        
+        
+        
+          </section>
+          
+        
+
+    </div>
+    
+</div>
+<div>
+    <section>
+        <div class="border bg-slate-50 w-3/4 p-4 ">
+          <h2>Activity Log</h2>
+          <button id="btn" class="btn">Clear History</button>
+        </div>
+        <div id="blank-div" class="border bg-slate-50 w-3/4 p-4 row-span-3">
+      
+        </div>
+            </section>
+
+</div>
+
+
+
+
+</div> -->
+
+
+   
+
+<!-- 
+ <section class="grid grid-cols-2 mx-auto container">
+    <section class=" mt-5 bg-white"> -->
+
+        <!-- <section class="flex gap-6">
+            <div class="flex gap-4 border bg-purple-300 ">
+                <p>icon</p>
+                <div >
+                    <h2>Task Assigned</h2> 
+                    <p id="number">05</p>
+                </div>
+                </div>
+                <div id="discover-box" class="flex border">
+                <img src="./assets/board.png" alt="">
+                <h2>Discover Something New Today!</h2>
+            
+                </div>
+                <div class="border bg- ">
+                    <img src="./assets/calender.png" alt="">
+                    <p>Wed ,Jul 28 2025 
+                    </p>
+            
+                </div>
+        </section> -->
+        <!-- <section>
+            <div class=" border-x-2 border-y-2">
+                <button></button>
+                <h1>Fix Mobile Button Issue </h1>
+                <input type="text" placeholder="lorem20">
+                <div>
+                    <div>
+                        <p>Deadline</p>
+                        <p>date</p>
+                    </div>
+                    <button id="completed-button" class="btn">
+                        completed
+                    </button>
+                </div>
+            </div>
+        </section> -->
+    
+    
+    
+    
+      <!-- </section> -->
+      <!-- <section class="grid">
+  <div class="border bg-slate-50 w-3/4 p-4 ">
+    <h2>Activity Log</h2>
+    <button id="btn" class="btn">Clear History</button>
+  </div>
+  <div id="blank-div" class="border bg-slate-50 w-3/4 p-4 row-span-3">
+
+  </div>
+      </section> -->
+ <!-- </section> -->
+ 
+
+
+
+
+
+    <script src="./script/script.js"></script>
+   
+</body>
+</html>
