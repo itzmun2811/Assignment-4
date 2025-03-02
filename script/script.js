@@ -24,15 +24,11 @@ button.addEventListener("click",
             const section = document.getElementById("blank-div");
             const div = document.createElement("div");
             const p = document.createElement("p");
-            p.innerText = `You have Complete The Task  at 
+            p.innerText = `You have Complete The Task  at ${time1}
             `
             div.appendChild(p);
             section.appendChild(div);
-         
-        
-        
             
-
             button.setAttribute("disabled",true);
             completeButtons[i].setAttribute("disabled",true);
             
