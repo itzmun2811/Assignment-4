@@ -3,12 +3,13 @@ const time1 = time.toLocaleTimeString();
 document.getElementById("blank-div").style.display = "none";
 
 
+
 completeButtons = document.querySelectorAll('.completed-button')
 for(let i=0 ; i< completeButtons.length ; i++){
  const button = completeButtons[i];
 button.addEventListener("click",
         function(event){
-           console.log(event.target)
+           
             alert("board updated successfully");
             const taskNumber = document.getElementById("task-number").innerText;
             const taskNumber1 = parseInt(taskNumber);
@@ -24,10 +25,13 @@ button.addEventListener("click",
             
             const section = document.getElementById("blank-div");
             document.getElementById("blank-div").style.display = "block";
-   
+            const title =event.target.parentNode.parentNode.firstChild
+                .nextSibling.nextElementSibling.innerText
+                ;
+            console.log(title)
             const div = document.createElement("div");
             const p = document.createElement("p");
-            p.innerText = `You have Complete The Task  at ${time1}
+            p.innerText = `You have Complete The Task  ${title}  at ${time1}
             `
             div.appendChild(p);
             section.appendChild(div);
