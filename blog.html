@@ -79,13 +79,22 @@
                 </div>
                 <div class="bg-white w-11/12 h-5/6 mx-auto p-9 mt-1  font-semibold">
          <p>
-          innerHTML includes all html tag like <p></p> tag ,
-          <div></div> tag and also contains text inside it
+          innerHTML includes all html tag like p tag ,
+          div tag,span tag and also contains text inside it. 
+          it will allow you to add html tag in new element and the webpage 
+          will  provide this code exactly.
+          
           <br>
-          innerText excludes all tag and shows only text inside 
-          them . it ignores any hidden text. 
+          innerText excludes all html tag , reads and modify only visible text inside 
+          them(doesn't read any text that are hidden by css) . example- 
+          <p> Document object</b> model</p>
+          it will show only document object model not bold tag and p tag..
+
           <br>
-          textContent 
+          textContent - text content read and set all text including hidden text 
+          and doesnt shows any html tag. it has little  better performance than 
+          <br>innertext as it doesnt consider any css class.
+          have 
          </p>
                 </div>
               </section>
