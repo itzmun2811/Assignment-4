@@ -22,6 +22,9 @@ button.addEventListener("click",
             const nextNumber = number1 - 1;
             console.log(nextNumber);
             document.getElementById("number").innerText = nextNumber;
+            if(nextNumber < 1){
+           alert("Congrats! You have completed the current task")
+            };
             
             const section = document.getElementById("blank-div");
             document.getElementById("blank-div").style.display = "block";
@@ -39,6 +42,7 @@ button.addEventListener("click",
             button.setAttribute("disabled",true);
             completeButtons[i].setAttribute("disabled",true);
             
+
         }
     )
 }
@@ -52,13 +56,13 @@ button.addEventListener("click",
         window.location.href = "blog.html"
     })
     
-    document.getElementById("btn-theme").addEventListener("click",function(){
-        const themes = ["bg-orange-400","bg-blue-400","bg-cyan-400","bg-pink-400"];
-        for(const theme of themes ){
-            document.getElementById("body").style.background = theme;
+    // document.getElementById("btn-theme").addEventListener("click",function(){
+    //     const themes = ["bg-orange-400","bg-blue-400","bg-cyan-400","bg-pink-400"];
+    //     for(const theme of themes ){
+    //         document.getElementById("body").style.backgroundColor = theme;
 
-        }
-    })
+    //     }
+    // })
         
  const date = new Date();
 const specificDate =date.toDateString("en-GB")
@@ -67,12 +71,12 @@ const specificDate =date.toDateString("en-GB")
 
 
  document.getElementById("btn-theme").addEventListener("click",function(){
-    const colors =['slateblue', 'Violet' ,'LightGray','mediumSeaGreen']
-   
-    for( let i = 0 ; i < colors.length ; i++){
-      const color = colors [i];
-    document.body.style.backgroundColor = color;
+    const colors =['slateblue', 'Violet' ,'LightGray','mediumSeaGreen','lightRed','lightOrange','lightyellow','pink']
+
+    const color = (Math.random() * colors.length)
+    const changetheme = colors[Math.floor(color)]
+    document.body.style.backgroundColor = changetheme;
     
-    }
+    
  
  })

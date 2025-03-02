@@ -61,9 +61,13 @@
                 </div>
                 <div class="bg-white w-11/12 h-5/6 mx-auto p-9 mt-1  font-semibold">
          <p>
-          There are numerous ways to select an element in the DOM-
-          1.getElementById()
-          2.getElementByClassName
+          There are numerous ways to select an element in the DOM- <br>
+          1.getElementById() <br>
+          2.getElementsByClassName <br>
+          3.getElementsByTagName() <br>
+          4.querySelector() <br>
+          5.querySelectorAll() <br>
+          6.getElementsByName() <br>
          </p>
                 </div>
               </section>
@@ -75,9 +79,13 @@
                 </div>
                 <div class="bg-white w-11/12 h-5/6 mx-auto p-9 mt-1  font-semibold">
          <p>
-          There are numerous ways to select an element in the DOM-
-          1.getElementById()
-          2.getElementByClassName
+          innerHTML includes all html tag like <p></p> tag ,
+          <div></div> tag and also contains text inside it
+          <br>
+          innerText excludes all tag and shows only text inside 
+          them . it ignores any hidden text. 
+          <br>
+          textContent 
          </p>
                 </div>
               </section>
@@ -89,9 +97,12 @@
                 </div>
                 <div class="bg-white w-11/12 h-5/6 mx-auto p-9 mt-1  font-semibold">
          <p>
-          There are numerous ways to select an element in the DOM-
-          1.getElementById()
-          2.getElementByClassName
+          Event Delegation allows programmer to use one single
+          event listener to parent element rather than adding <br>different
+           event listener to each child.This parent element control all events 
+           for each of it's  children element though it is newly added by createElements by js.
+
+
          </p>
                 </div>
               </section>
@@ -103,9 +114,9 @@
                 </div>
                 <div class="bg-white w-11/12 h-5/6 mx-auto p-9 mt-1  font-semibold">
          <p>
-          There are numerous ways to select an element in the DOM-
-          1.getElementById()
-          2.getElementByClassName
+          Event bubbling define as a event that take place  at child element <br>
+          then like a bubble it trigger up to it's parent element ,then its parent <br>
+           element and so on until it find the origin or root of dom. 
          </p>
                 </div>
               </section>
@@ -117,9 +128,20 @@
                 </div>
                 <div class="bg-white w-11/12 h-5/6 mx-auto p-9 mt-1  font-semibold">
          <p>
-          There are numerous ways to select an element in the DOM-
-          1.getElementById()
-          2.getElementByClassName
+           1. create element-
+           by using createElement -
+            const elementName = document.createElement('tagname' like p ,div etc);
+            example :
+            const p = document.createElement('p');
+          2.add element :
+             by using appendChild-
+             const div = document.getElementById('div');
+             const p = document.createElement('p');
+             div.appendChild(p);
+          3.removeElement:
+          by using removeChild-
+           const parentDiv = document.getElementById('div');
+           parentDiv.removeChild('any existing tag')
          </p>
                 </div>
               </section>
