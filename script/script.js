@@ -10,7 +10,7 @@ for(let i=0 ; i< completeButtons.length ; i++){
 button.addEventListener("click",
         function(event){
            
-            alert("board updated successfully");
+            alert("Board updated Successfully");
             const taskNumber = document.getElementById("task-number").innerText;
             const taskNumber1 = parseInt(taskNumber);
             const nextTaskNumber = taskNumber1 + 1;
@@ -56,13 +56,7 @@ button.addEventListener("click",
         window.location.href = "blog.html"
     })
     
-    // document.getElementById("btn-theme").addEventListener("click",function(){
-    //     const themes = ["bg-orange-400","bg-blue-400","bg-cyan-400","bg-pink-400"];
-    //     for(const theme of themes ){
-    //         document.getElementById("body").style.backgroundColor = theme;
-
-    //     }
-    // })
+  
         
  const date = new Date();
 const specificDate =date.toDateString("en-GB")
