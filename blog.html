@@ -59,20 +59,22 @@
                 <div class="bg-white w-11/12 h-5/6 mx-auto p-9 mt-1  font-semibold">
          <p>
           innerHTML includes all html tag like p tag ,
-          div tag,span tag and also contains text inside it. 
+          div tag,span tag and also contains text inside it.It does not consider 
+          whether text is visible or not. Moreover, 
           it will allow you to add html tag in new element and the webpage 
-          will  provide this code accordingly.
+          will provide this code accordingly.
+          
           
           <br>
           innerText excludes all html tag , reads and modify only visible text inside 
           them(doesn't read any text that are hidden by css) . example- 
           <p> style {display : none } Document object model</p>
-          it will not show p tag.. as it controlled by css
+          it will not show p tag.. as it controlled by css.
 
           <br>
-          textContent - text content read and set all text including hidden text 
-          and doesnt shows any html tag. it has little  better performance than 
-          <br>innertext as it doesnt consider any css class.
+          textContent - textContent read and set all text including hidden text 
+          and doesnt shows any html tag. It has little  better performance than 
+          <br>innertext as it doesnt have to consider any css class.
           
          </p>
                 </div>
@@ -88,7 +90,7 @@
           Event Delegation allows programmer to use one single
           event listener to parent element rather than adding <br>different
            event listener to each child.This parent element control all events 
-           for each of it's  children element though it is newly added by createElements by js.
+           for each of it's  children element though it is newly added dynamically.
 
 
          </p>
