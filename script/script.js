@@ -50,6 +50,8 @@ button.addEventListener("click",
 
     document.getElementById("btn").addEventListener("click",function(){
         document.getElementById("blank-div").innerText = " ";
+        document.getElementById("blank-div").style.display = "none";
+
     })
      
     document.getElementById("discover-box").addEventListener("click",function(){
