@@ -31,16 +31,40 @@ button.addEventListener("click",
             const title =event.target.parentNode.parentNode.firstChild
                 .nextSibling.nextElementSibling.innerText
                 ;
-            console.log(title)
-            const div = document.createElement("div");
-            const p = document.createElement("p");
-            p.innerText = `You have Complete The Task  ${title}  at ${time1}
-            `
-            div.appendChild(p);
-            section.appendChild(div);
+
+                
+            // console.log(title)
+            // const div = document.createElement("div");
+            // const p = document.createElement("p");
+            // p.innerText = `You have Complete The Task  ${title}  at ${time1}
+            // `
+            // div.appendChild(p);
+            // section.appendChild(div);
+
+            // const section = document.getElementById("blank-div");
+  
+                const div = document.createElement("div");
+                div.style.padding = "10px";
+                div.style.margin = "5px";
+                div.style.backgroundColor="lightgrey";
+                const p = document.createElement("p");
+            
+                // Set the paragraph text
+                p.innerText = `You have completed the task "${title}" at ${time1}`;
+            
+                // Append the paragraph to the div
+                div.appendChild(p);
+            
+                // Append the new div to the section
+                section.appendChild(div);
+                
+          
+
 
             button.setAttribute("disabled",true);
             completeButtons[i].setAttribute("disabled",true);
+
+            document.getElementById("blank-div").classList.add("mb-6 p-6 border")
             
 
         }
